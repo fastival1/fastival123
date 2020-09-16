@@ -16,22 +16,38 @@ height: 100%;
    }
      @keyframes myfirst
 {
-from {opacity:0;}
-to {opacity:100;}
+0% {opacity:0;}
+25% {opacity:100;}
+50% {opacity:0;}
+100% {opacity:0;}
 }
-h1,p{
-animation: myfirst 1s infinite; 
+@keyframes mysceond
+{
+0% {opacity:0;}
+25% {opacity:0;}
+75% {opacity:100;}
+100% {opacity:0;}
+}
 
+p{
+font-size: 100px; 
+position: absolute;
+width:100%;
+text-align: center;
+}
+#agg
+{
+  animation: myfirst 12s infinite;
 }
 </style>
 </head>
 <body>
-  <audio src="bgm/bgm1.mp3" controls="controls">
+  <audio src="bgm/bgm1.mp3" autoplay="autoplay" loop="loop">
    </audio>
 <h1>what</h1>
-<p>望着你的背影远走</p>
-<p>已来不及握你的手</p>
-<p>挽留的话说不出口</p>    
-<p>只剩耳边风声嘶吼</p>   
+<p id="agg">望着你的背影远走</p>
+<p id="bgg">已来不及握你的手</p>
+<p id="cgg">挽留的话说不出口</p>    
+<p id="dgg">只剩耳边风声嘶吼</p>   
 </body>    
 </html> 
